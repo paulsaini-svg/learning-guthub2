@@ -1,91 +1,249 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>AI + Game Design Command Center</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
-  <header class="site-header">
-    <p class="eyebrow">DESN 374 &#183; Command Center</p>
-    <h1 id="project-title">How Can AI Assist in Game Design?</h1>
-    <p class="tagline">A research and experiment hub by Paul Saini exploring how AI can support beginner game designers without replacing real learning.</p>
-  </header>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>The Darkness Within | AI+Design Final Project</title>
+    <meta name="description" content="The Darkness Within is a 2D horror-action game prototype about Lumi, unreliable perception, and building a playable vertical slice with AI-assisted design tools.">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
 
-  <main class="container">
-    <section aria-labelledby="identity-h">
-      <h2 id="identity-h">Project Identity Card</h2>
-      <p><strong>Curiosity statement:</strong> How can AI assist in game design?</p>
-      <p>This inquiry could lead to a tool that helps game designers build simple game mechanics with AI guidance. It could also become a learning system that teaches coding step-by-step while using AI as support. Another direction could explore the risks of over-reliance on AI and how to balance learning with assistance.</p>
-      <p>This matters because many new coders struggle to get started with game design and often feel overwhelmed. I am curious about the tension between AI helping beginners learn faster and the risk of them relying on it too much. AI could make coding more accessible, but it might also limit real understanding. This could lead to better learning tools or new ways of teaching game design with AI support.</p>
-      <p><strong>Early artifact:</strong> Screenshot of my game completely generated through ChatGPT.</p>
-    </section>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="The Darkness Within home">
+        <span class="brand-mark">TDW</span>
+        <span>
+          <strong>The Darkness Within</strong>
+          <small>AI+Design Studio Final</small>
+        </span>
+      </a>
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a href="#research">Research</a>
+        <a href="#process">Process</a>
+        <a href="#character">Lumi</a>
+        <a href="#prototype">Prototype</a>
+        <a href="#reflection">Reflection</a>
+      </nav>
+    </header>
 
-    <section aria-labelledby="inquiry-h">
-      <h2 id="inquiry-h">Inquiry Brief</h2>
-      <p><strong>Research question:</strong> How can AI assist in game design?</p>
-      <p><strong>Why it matters:</strong> Many new coders struggle to get started with game design and often feel overwhelmed. I am curious about the tension between AI helping beginners learn faster and the risk of them relying on it too much. AI could make coding more accessible, but it might also limit real understanding.</p>
-      <p><strong>What I need to learn:</strong> I need to understand how AI tools currently help with coding in game design, what tasks they are best at, and where they fall short. I also want to learn how beginners actually use AI and whether it improves learning or creates dependency. Finally, I need to explore how to balance AI assistance with real skill development.</p>
-      <p><strong>Possible final outcomes:</strong> A tool that helps new coders build simple game mechanics with AI guidance; a learning system that teaches coding step-by-step while using AI as support; or a project about the risks of over-reliance on AI and how to balance learning with assistance.</p>
-    </section>
+    <main id="main">
+      <section class="hero" id="top" aria-labelledby="page-title">
+        <img class="hanging-lumi" src="character-art/lumi-top-hanging.png" alt="Lumi hanging from the top of the page">
+        <div class="hero-copy">
+          <p class="kicker">Playable horror/action vertical slice</p>
+          <h1 id="page-title">The Darkness Within</h1>
+          <p class="lead">Lumi gets thrown out of Hell and wakes up in a forest that should be peaceful. She cannot see it that way. To her, everything living looks suspicious, cursed, or ready to attack.</p>
+          <div class="hero-actions">
+            <a class="button primary" href="game/index.html">Play the prototype</a>
+            <a class="button" href="https://app.milanote.com/1WlsTv1mD0Gp9r/command-center?p=QNYmC8qIito">Milanote board</a>
+            <a class="button" href="https://github.com/paulsaini-svg/learning-guthub2">GitHub repo</a>
+          </div>
+        </div>
+        <div class="hero-frame" aria-label="Game screenshot collage">
+          <img src="process-images/04_wake_in_twisted_forest.png" alt="Lumi waking up in the twisted forest">
+          <img src="character-art/lumi-portfolio-mascot.png" alt="Lumi character art" class="hero-lumi">
+        </div>
+      </section>
 
-    <section aria-labelledby="sources-h">
-      <h2 id="sources-h">Source Starter List</h2>
-      <ul>
-        <li><a href="https://github.com/features/copilot">GitHub Copilot</a></li>
-        <li><a href="https://unity.com/features/ai">Unity AI</a></li>
-        <li><a href="https://www.jonathanyu.xyz/2023/11/13/ai-powered-unity-game-development-with-github-copilot-6-month-review/">AI-Powered Unity Game Development with GitHub Copilot: 6 Month Review</a></li>
-        <li><a href="https://arxiv.org/abs/2303.08733">arXiv: 2303.08733</a></li>
-        <li><a href="https://arxiv.org/abs/2406.17910">arXiv: 2406.17910</a></li>
-        <li><a href="https://arxiv.org/abs/2602.09185">arXiv: 2602.09185</a></li>
-        <li><a href="https://ilogos.biz/mastering-ai-game-programming/">Mastering AI Game Programming</a></li>
-        <li><a href="https://github.com/simoninithomas/awesome-ai-tools-for-game-dev">Awesome AI Tools for Game Dev</a></li>
-        <li><a href="https://www.creativebloq.com/3d/video-game-design/unity-ai-will-let-you-build-entire-games-with-just-words">Unity AI will let you build entire games with just words</a></li>
-        <li><a href="https://arxiv.org/abs/2509.26161">arXiv: 2509.26161</a></li>
-        <li><a href="https://arxiv.org/abs/2309.05687">arXiv: 2309.05687</a></li>
-        <li><a href="https://arxiv.org/abs/2311.01020">arXiv: 2311.01020</a></li>
-        <li><a href="https://arxiv.org/abs/2209.01766">arXiv: 2209.01766</a></li>
-      </ul>
-    </section>
+      <section class="status-strip" aria-label="Project status">
+        <div><span>Format</span><strong>HTML canvas game + case study</strong></div>
+        <div><span>Build</span><strong>Title, cutscene, forest, enemies, combat</strong></div>
+        <div><span>Theme</span><strong>Cute horror, unreliable perception</strong></div>
+        <div><span>Submission</span><strong>Live site, repo, Milanote, process note</strong></div>
+      </section>
 
-    <section aria-labelledby="roadmap-h">
-      <h2 id="roadmap-h">Project Brief / Weekly Roadmap</h2>
-      <p><strong>Week 5:</strong> Understand how AI is currently used by beginner game developers. Research AI coding tools and test basic prompts for simple game mechanics using ChatGPT, YouTube, and Unity tutorials. Output: notes and examples of AI-generated code. Success indicator: I can explain how AI helps beginners start coding.</p>
-      <p><strong>Week 6:</strong> Test AI for building simple game features. Use AI to generate movement scripts or basic mechanics in Unity or a simple game engine. Output: a working or partially working game mechanic. Success indicator: AI-generated code works or can be fixed with small edits.</p>
-      <p><strong>Week 7:</strong> Identify strengths and weaknesses of AI for beginners. Compare AI-generated code with learning manually using ChatGPT and documentation sites. Output: a list of pros and cons. Success indicator: a clear understanding of when AI helps and when it fails.</p>
-      <p><strong>Week 8:</strong> Explore learning vs. dependency. Try learning without AI, then with AI, and compare the results. Output: comparison notes. Success indicator: I can explain the difference between learning and relying.</p>
-      <p><strong>Week 9:</strong> Develop a concept for the final outcome. Choose a direction such as a tool, system, or research outcome using Milanote and ChatGPT. Output: concept idea and rough plan. Success indicator: clear direction for the final project.</p>
-      <p><strong>Week 10:</strong> Build or design the final concept. Create a prototype, system, or visual explanation using design tools, Milanote, and ChatGPT. Output: draft of final project. Success indicator: project is mostly complete.</p>
-      <p><strong>Week 11:</strong> Finalize and present the project. Refine, clean up, and prepare the presentation. Output: final project and presentation. Success indicator: a clear, complete project that answers the research question.</p>
-    </section>
+      <section class="section story-section">
+        <div class="section-heading">
+          <p class="kicker">Project Story</p>
+          <h2>A cute demon sees the living world like a threat.</h2>
+        </div>
+        <div class="story-grid">
+          <article class="big-card">
+            <h3>What the player knows first</h3>
+            <p>Lumi is a young demonic wolf from Hell. After being judged and banished, she lands in a forest and tries to survive. The player moves, dashes, attacks with a katana, and pushes into a second area full of hostile-looking creatures.</p>
+          </article>
+          <article class="big-card red-card">
+            <h3>What the game slowly questions</h3>
+            <p>The enemies might not be demons. They might be animals. The forest might not be evil. Lumi may be dragging Hell with her, turning unfamiliar life into something she understands: danger.</p>
+          </article>
+        </div>
+      </section>
 
-    <section aria-labelledby="prompts-h">
-      <h2 id="prompts-h">Prompt Log</h2>
-      <p><strong>Entry 1:</strong> Prompt used: "Create a simple player movement script for a 2D game using beginner-friendly code." Model / tool: ChatGPT. Output summary: The AI generated a basic movement script with controls and explained how it works. What changed afterward: I realized AI can generate usable starting code, but I still needed to understand and adjust it.</p>
-      <p><strong>Entry 2:</strong> Prompt used: "Explain how to create a basic enemy AI for a beginner game." Model / tool: ChatGPT. Output summary: The AI provided a simple explanation of enemy behavior and example logic. What changed afterward: I started thinking more about how AI can guide learning, not just generate code.</p>
-    </section>
+      <section class="section" id="research">
+        <div class="section-heading">
+          <p class="kicker">Research Dashboard</p>
+          <h2>The research was not decoration. It changed the game.</h2>
+          <p class="section-intro">The references helped decide how the game should look, what the enemies mean, and how the player should read Lumi's point of view.</p>
+        </div>
+        <div class="research-board">
+          <article>
+            <span>01</span>
+            <h3>Paper Mario</h3>
+            <p>Inspired the flat, storybook cutout feeling. Characters should feel like illustrated pieces moving through a staged world.</p>
+          </article>
+          <article>
+            <span>02</span>
+            <h3>Cult of the Lamb</h3>
+            <p>Helped define the cute-but-horrific contrast: soft animal forms, dark rituals, danger, and comedy sitting too close together.</p>
+          </article>
+          <article>
+            <span>03</span>
+            <h3>Unreliable Mechanics</h3>
+            <p>The game should not only say Lumi is confused. Combat, enemy design, and death states should make the player question reality.</p>
+          </article>
+          <article>
+            <span>04</span>
+            <h3>Visual Morality</h3>
+            <p>Sharp shapes, red eyes, and dark silhouettes can trick the player into labeling something evil before the story complicates it.</p>
+          </article>
+        </div>
+      </section>
 
-    <section aria-labelledby="experiments-h">
-      <h2 id="experiments-h">Experiment Log</h2>
-      <p><strong>Experiment 1:</strong> I used AI to generate a simple player movement system. The AI gave a usable base and clear explanation, but some parts did not work perfectly and needed fixing. Next step: test more complex mechanics like jumping or collisions.</p>
-      <p><strong>Experiment 2:</strong> I used AI to understand enemy behavior in games. It helped break down concepts in a simple way, but lacked depth for more advanced behavior. Next step: try combining multiple systems together.</p>
-    </section>
+      <section class="section black-section" id="process">
+        <div class="section-heading">
+          <p class="kicker">Process Screenshots</p>
+          <h2>From rough idea to playable slice.</h2>
+          <p class="section-intro">These screenshots show the path of the prototype: title, judgment, banishment, forest, combat, and the process board. The project got stronger when the visuals stopped being just “cool dark stuff” and started supporting Lumi's unreliable perception.</p>
+        </div>
+        <div class="process-wall">
+          <figure>
+            <img src="process-images/01_title_screen.png" alt="Title screen for The Darkness Within">
+            <figcaption><strong>Title screen.</strong> First mood check: red, black, storybook horror.</figcaption>
+          </figure>
+          <figure>
+            <img src="process-images/02_opening_judgment.png" alt="Opening judgment scene">
+            <figcaption><strong>Opening judgment.</strong> Satan becomes the first voice of pressure and punishment.</figcaption>
+          </figure>
+          <figure>
+            <img src="process-images/03_banishment_flash.png" alt="Banishment flash">
+            <figcaption><strong>Banishment flash.</strong> A fast, dramatic transition from Hell to the living world.</figcaption>
+          </figure>
+          <figure>
+            <img src="process-images/05_area_exit_gap.png" alt="Area exit gap in the forest">
+            <figcaption><strong>Navigation problem.</strong> The exit gap made the world feel like a level, not just a picture.</figcaption>
+          </figure>
+          <figure>
+            <img src="process-images/07_combat_systems.png" alt="Combat systems screenshot">
+            <figcaption><strong>Combat tuning.</strong> Dash, katana, enemy attacks, hit feedback, health, and restart had to read quickly.</figcaption>
+          </figure>
+          <figure>
+            <img src="process-images/08_process_board.png" alt="Milanote process board screenshot">
+            <figcaption><strong>Process board.</strong> The messy thinking space: references, assets, notes, and decisions.</figcaption>
+          </figure>
+        </div>
+      </section>
 
-    <section aria-labelledby="links-h">
-      <h2 id="links-h">Links / Workspace</h2>
-      <ul>
-        <li><strong>Milanote board:</strong> The Darkness Within - Video Game</li>
-        <li><strong>Sources:</strong> <a href="https://blog.unity.com">Unity Blog</a> and <a href="https://www.ibm.com/topics/generative-ai">IBM: What is Generative AI?</a></li>
-        <li><strong>AI tools used:</strong> ChatGPT and NotebookLM</li>
-        <li><strong>Repo / site link:</strong> N/A</li>
-        <li><strong>Working files:</strong> Milanote board, AI-generated game concept images, and basic code experiments</li>
-      </ul>
-    </section>
-  </main>
+      <section class="section ups-downs">
+        <div class="section-heading">
+          <p class="kicker">Ups, Downs, Pivots</p>
+          <h2>The mess is where the game actually became interesting.</h2>
+        </div>
+        <div class="split">
+          <article class="torn-card">
+            <h3>What worked</h3>
+            <ul>
+              <li>Lumi became a strong main character once the cute/horror contrast was pushed harder.</li>
+              <li>The forest backgrounds made the world feel alive but wrong.</li>
+              <li>Putting combat after the cutscene made the prototype feel like a real game slice.</li>
+              <li>The enemy area gave the project a clear mechanical center.</li>
+            </ul>
+          </article>
+          <article class="torn-card danger">
+            <h3>What fought back</h3>
+            <ul>
+              <li>Some early assets did not match each other, so the visual style had to be tightened.</li>
+              <li>The game risked becoming “dark because dark” until the perception idea gave it meaning.</li>
+              <li>Combat feedback needed multiple passes so hits, damage, and danger were readable.</li>
+              <li>The final site originally felt too clean, which clashed with the game itself.</li>
+            </ul>
+          </article>
+        </div>
+      </section>
 
-  <footer class="site-footer">
-    <p>DESN 374 &#183; Command Center &#183; built with the Interview &#8594; Brainstorm &#8594; Plan &#8594; Code &#8594; Commit workflow</p>
-  </footer>
-</body>
+      <section class="section character-section" id="character">
+        <div class="section-heading">
+          <p class="kicker">Character + World</p>
+          <h2>Lumi is cute, sad, dangerous, and unreliable.</h2>
+        </div>
+        <div class="character-grid">
+          <div class="character-art">
+            <img src="character-art/lumi-portfolio-mascot.png" alt="Lumi character mascot art">
+          </div>
+          <article class="character-copy">
+            <h3>Lumi</h3>
+            <p>Lumi is not designed as a normal hero. She is small and expressive, but her background is Hell, punishment, and survival. Her softness matters because it makes the violence more complicated.</p>
+            <p>The player is not simply controlling Lumi. The player is also trapped inside the way Lumi interprets the world.</p>
+            <div class="mini-gallery">
+              <img src="assets/opening-scene.png" alt="Opening scene asset">
+              <img src="assets/forest-beginning-twisted.png" alt="Twisted forest background asset">
+              <img src="assets/enemy-sprite-sheet.png" alt="Enemy sprite sheet asset">
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section prototype-section" id="prototype">
+        <div class="section-heading">
+          <p class="kicker">Final Product</p>
+          <h2>The current build is a focused vertical slice.</h2>
+          <p class="section-intro">It is not pretending to be a finished five-hour game. It is a working prototype that proves the story, art direction, and core interaction can exist together.</p>
+        </div>
+        <div class="prototype-grid">
+          <article class="feature-list">
+            <h3>What is playable</h3>
+            <ul>
+              <li>Title screen with Start and Close buttons.</li>
+              <li>Opening cutscene where Satan banishes Lumi.</li>
+              <li>First forest area where Lumi wakes up confused.</li>
+              <li>Area transition through the forest gap.</li>
+              <li>Second forest area with five hallucination enemies.</li>
+              <li>Movement, dash, katana attack, enemy projectiles, health, death, and restart.</li>
+            </ul>
+            <a class="button primary" href="game/index.html">Open the playable game</a>
+          </article>
+          <img src="process-images/06_enemy_area.png" alt="Enemy area screenshot from The Darkness Within">
+        </div>
+      </section>
+
+      <section class="section reflection-section" id="reflection">
+        <div class="section-heading">
+          <p class="kicker">Reflection</p>
+          <h2>The click moment: perception became gameplay.</h2>
+        </div>
+        <div class="reflection-grid">
+          <article class="quote-card">
+            <p>At first, the enemies were just enemies. The better idea was making the player wonder whether Lumi is fighting monsters, memories, or innocent creatures she cannot understand.</p>
+          </article>
+          <article class="big-card">
+            <h3>AI helped, but it did not choose the soul of the project.</h3>
+            <p>AI/Codex helped organize the final site, structure HTML/CSS, shape case study language, and support the JavaScript prototype. The project decisions still came from editing: choosing the premise, pushing the tone, rejecting generic parts, and deciding that Lumi's perception had to be the center.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section submit-section">
+        <div class="section-heading">
+          <p class="kicker">Canvas Submission</p>
+          <h2>Paste-ready submission block.</h2>
+        </div>
+        <pre class="submit-box">Live GitHub Pages URL:
+https://paulsaini-svg.github.io/learning-guthub2/
+
+GitHub repository URL:
+https://github.com/paulsaini-svg/learning-guthub2
+
+Milanote board link:
+https://app.milanote.com/1WlsTv1mD0Gp9r/command-center?p=QNYmC8qIito
+
+Brief process note:
+1. I used AI/Codex to help organize the final project site, structure the HTML/CSS, shape the case study language, and support the browser-game prototype work in JavaScript.
+2. I revised the concept, tone, project direction, asset choices, game pacing, enemy meaning, and final presentation decisions myself after the AI-generated drafts. The main design choice was making Lumi's perception part of the gameplay, so the player questions whether the forest enemies are real threats or distorted living-world animals.</pre>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>The Darkness Within. AI+Design Studio final project by Paul Saini.</p>
+    </footer>
+  </body>
 </html>
